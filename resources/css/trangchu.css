@@ -1,36 +1,59 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}html {
-    font-size: 14px;
-    overflow-x: hidden;
-    font-family: Arial, sans-serif,Arial, Helvetica, sans-serif;
-    
-}
-body{margin: 0; padding: 0;}
-#form-dangnhap{margin-top: 70px; margin-left:50%; width: 100%;
 
-    box-shadow: -2px 3px 5px rgba(0, 0, 0,0.2),
-    3px -5px 5px rgba(255, 255, 255,1);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-#carot{}
-#id_btn_da{ background-color: orangered;
-    font-size: 20px;
-    color: white;
-    width: 80%;
-    height: 50px;
-    border-radius: 8px;
-    border: 1px solid rgb(255, 255, 255,50%);
-    box-shadow: -2px 3px 5px rgba(0, 0, 0,0.2),
-                3px -5px 5px rgba(255, 255, 255,1);}
-.border_radius{
-    border-radius: 5px;
+
+html {
+  font-size: 14px;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif, Arial, Helvetica, sans-serif;
+
 }
-.wave{
-    position: absolute;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#form-dangnhap {
+  margin-top: 70px;
+  margin-left: 50%;
+  width: 100%;
+
+  box-shadow: -2px 3px 5px rgba(0, 0, 0, 0.2),
+    3px -5px 5px rgba(255, 255, 255, 1);
+}
+
+#carot {}
+
+#id_btn_da {
+  transition-duration: 0.4s;
+  background-color: orangered;
+  font-size: 20px;
+  color: white;
+  width: 80%;
+  height: 50px;
+  border-radius: 8px;
+  border: 1px solid rgb(255, 255, 255, 50%);
+  box-shadow: -2px 3px 5px rgba(0, 0, 0, 0.2),
+    3px -5px 5px rgba(255, 255, 255, 1);
+}
+
+#id_btn_da:hover {
+  background-color: #4CAF50;
+  /* Green */
+  color: white;
+}
+
+.border_radius {
+  border-radius: 5px;
+}
+
+.wave {
+  position: absolute;
   top: -70px;
   left: 0;
   width: 100%;
@@ -38,50 +61,52 @@ body{margin: 0; padding: 0;}
   background: url("/img/wave.png");
   background-size: 1000px 100px;
 }
+
 .wave#wave1 {
-    z-index: 1000;
-    background-color:#F4F4F4;
-    opacity: 1;
-    bottom: 0;
-    animation: animateWaves 4s linear infinite;
-  }
-  
-  .wave#wave2 {
-    z-index: 999;
-    opacity: 0.5;
-    bottom: 10px;
-    animation: animate 4s linear infinite !important;
-  }
-  
-  .wave#wave3 {
-    z-index: 1000;
-    opacity: 0.2;
-    bottom: 15px;
-    animation: animateWaves 3s linear infinite;
-  }
-  
-  .wave#wave4 {
-    z-index: 999;
-    opacity: 0.7;
-    bottom: 20px;
-    animation: animate 3s linear infinite;
-  }
-  
-  @keyframes animateWaves {
-    0% {
-      background-position-x: 1000px;
-    }
-    100% {
-      background-positon-x: 0px;
-    }
-  }
-  
-  @keyframes animate {
-    0% {
-      background-position-x: -1000px;
-    }
-    100% {
-      background-positon-x: 0px;
-    }
+  z-index: 1000;
+  background-color: #F4F4F4;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
   }
 
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+
+  100% {
+    background-positon-x: 0px;
+  }
+}
