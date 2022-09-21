@@ -11,10 +11,10 @@ app.set('view engine', 'hbs');
 
 
 app.get('/', (req, res) => {
-  res.render('home');
+  res.render('dangnhap');
 });
 app.get('/trangchu', (req, res) => {
-  res.render('nav');
+  res.render('trangchu');
 });
 
 app.listen(port, () => {
