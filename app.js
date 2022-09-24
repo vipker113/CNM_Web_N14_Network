@@ -1,5 +1,3 @@
-
-
 const express = require('express');
 
 const exphbs = require('express-handlebars');
@@ -11,12 +9,15 @@ app.set('view engine', 'hbs');
 
 
 app.get('/', (req, res) => {
-  res.render('dangnhap');
+    res.render('dangnhap');
 });
 app.get('/trangchu', (req, res) => {
-  res.render('trangchu');
+    res.render('trangchu');
+});
+app.get('/message', (req, res) => {
+    res.render('message');
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+    console.log(`Example app listening on port ${port}`)
 })
